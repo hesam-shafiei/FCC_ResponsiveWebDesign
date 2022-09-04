@@ -1,0 +1,81 @@
+/*
+Your img element should have a display of block
+Your #image should have a max-width of 100%
+Your #image should be centered within its parent
+*/
+
+#main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    padding: 30px 10px 30px 10px;
+    margin: 30px 10px 30px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    align-items: center;
+}
+
+#title{
+    font-size: 3.5em;
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+}
+
+p{
+    font-size: 1.6em;
+}
+
+#img-div{
+    background-color: white;
+    padding: 25px 10px 25px 10px;
+    border-radius: 5px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+#img-caption{
+    text-align: center;
+    margin-top:10px;
+    font-size: 1.4em;
+}
+
+#tribute-info{
+    display: flex;
+    flex-direction: column;
+}
+
+#headline{
+    text-align: center;
+    font-size: 1.6em;
+}
+li {
+    line-height: 150%;
+    margin: 5px 30px 0px 30px;
+    font-size: 1.4em;
+    
+}
+
+blockquote{
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+a{
+    color: orange;
+}
