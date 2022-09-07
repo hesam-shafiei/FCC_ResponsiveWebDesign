@@ -3,7 +3,7 @@ $primaryGrey: #4d4e53;
 @media (min-width: 800px) {
     body {
       display: grid;
-      grid-template-columns: 300px auto;
+      grid-template-columns: 500px auto;
       border: solid;
       font-family: 'Open Sans', Arial, sans-serif;
       color: $primaryGrey;
@@ -48,7 +48,7 @@ $primaryGrey: #4d4e53;
 
     header{
         font-size: 30px;
-        color: black;
+        color: red;
 
     }
 
