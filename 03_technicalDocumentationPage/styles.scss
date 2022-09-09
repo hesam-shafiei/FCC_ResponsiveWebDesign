@@ -18,6 +18,7 @@ $primaryGrey: #4d4e53;
 
     #main-doc{
       padding: 20px 20px 20px 30px;
+      grid-column: 2/3;
 
       article{
         padding-left: 20px;
@@ -33,7 +34,9 @@ $primaryGrey: #4d4e53;
       align-items: center;
       overflow:auto; 
       height: 100vh;
-      
+      position: fixed;
+      z-index: 1;
+      grid-column: 1/2;
 
       ul{
         list-style-type: none;
