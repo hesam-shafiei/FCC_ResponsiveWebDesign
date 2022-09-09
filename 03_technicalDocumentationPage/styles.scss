@@ -1,19 +1,114 @@
 $primaryGrey: #4d4e53;
 
+header{
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+}
+
+body{
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: $primaryGrey;
+  line-height: 1.5;
+}
+
+code{
+  display: block;
+  background-color: #f7f7f7;
+  color: black;
+  padding: 10px 20px 10px 20px;
+}
+
+#navbar{
+  ul{
+    list-style-type: none;
+    list-style-position: inside;
+  }
+
+  li {
+    border-bottom: solid;
+    border-width: 1px;
+    padding: 15px 20px 15px 20px;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $primaryGrey;
+  font-size: 16px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+@media (max-width: 799px) {
+
+  body{
+    display: grid;
+    grid-template-rows: 300px auto;
+  }
+
+  #main-doc{
+    grid-row:2/3;
+    padding: 20px 20px 20px 30px;
+
+    article{
+      padding-left: 20px;
+    }
+
+    p{
+      padding-left: 20px;
+    }
+  }
+
+  #navbar{
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    margin: 0px;
+    height: 300px;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    
+    ul{
+      overflow-y: scroll;
+    }
+
+
+    header{
+      text-align: center;
+    }
+
+    ul{
+      border: solid;
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+
+      li{
+        padding-left: 25px;
+      }
+
+    }
+
+
+
+  }
+
+  
+}
+
+
 @media (min-width: 800px) {
+
     body {
       display: grid;
       grid-template-columns: 300px auto;
-      font-family: 'Open Sans', Arial, sans-serif;
-      color: $primaryGrey;
-      line-height: 1.5;
-    }
-
-    code{
-      display: block;
-      background-color: #f7f7f7;
-      color: black;
-      padding: 10px 20px 10px 20px;
     }
 
     #main-doc{
@@ -39,43 +134,14 @@ $primaryGrey: #4d4e53;
       grid-column: 1/2;
 
       ul{
-        list-style-type: none;
-        list-style-position: inside;
-        
         padding-left: 0px;
         width: 100%;
-        
 
-        li {
-            border-bottom: solid;
-            border-width: 1px;
-            padding: 15px 20px 15px 20px;
-            
-
-            a{
-                text-decoration: none;
-                color: $primaryGrey;
-                font-size: 16px;
-                
-            }
-
-            a:hover{
-                text-decoration: underline;
-            }
-
+        li:first-child{
+          border-top: solid 1px;
         }
       }
 
-
     }
-
-    header{
-        font-size: 30px;
-        color: black;
-    }
-
-  
-  
-  
-  
+ 
   }/*# sourceMappingURL=styles.css.map */
